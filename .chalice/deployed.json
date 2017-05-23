@@ -1,0 +1,11 @@
+{
+  "dev": {
+    "rest_api_id": "8nd4qagt8d",
+    "chalice_version": "0.8.2",
+    "region": "us-west-2",
+    "backend": "api",
+    "api_handler_name": "sgms-dev",
+    "api_handler_arn": "arn:aws:lambda:us-west-2:064326055653:function:sgms-dev",
+    "api_gateway_stage": "dev"
+  }
+}
