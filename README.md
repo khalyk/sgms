@@ -1,4 +1,4 @@
-## Greetings Microservice using AWS/python/chalice
+## Simple Greetings Microservice using AWS/python/chalice
 
 This microservice was created using Chalice, a python-based serverless microframework for Amazon Web Services (AWS).
 
