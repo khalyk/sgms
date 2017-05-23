@@ -4,8 +4,10 @@ This microservice was created using Chalice, a python-based serverless microfram
 
 Documentation for Chalice:
 http://chalice.readthedocs.io/en/latest/
+
 Chalice GitHub repo:
 https://github.com/awslabs/chalice
+
 
 Chalice can be installed typically on a Linux system using:
 "pip install chalice"
@@ -16,7 +18,8 @@ The microservice handles two routes including a GET request to the root (or "/")
 
 This new version will also handle a POST request to "/greeting" with a variable of "name" passed into the request. The following example uses the "HTTPie" utility to make a simple POST request to the endpoint:
 
-```http --form POST https://8nd4qagt8d.execute-api.us-west-2.amazonaws.com/demo/greeting name=Kirk
+```
+http --form POST https://endpoint/dev/greeting name=Test
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 19
@@ -28,7 +31,7 @@ X-Amzn-Trace-Id: sampled=0;root=1-5923857e-6cccf8b6f700da16fc1ef974
 X-Cache: Miss from cloudfront
 x-amzn-RequestId: b8bbfa91-3f50-11e7-8f4e-67dfe1285e13
 
-"Hello Kirk World!"
+"Hello Test World!"
 ```
 
 Chalice will allow deployments to be pushed by developers on the team to different environments (dev, test, demo, production) all with different resources:
