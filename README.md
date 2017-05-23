@@ -10,9 +10,12 @@ https://github.com/awslabs/chalice
 
 
 Chalice can be installed typically on a Linux system using:
+
 "pip install chalice"
 
+
 See the documentation above for additional details.
+
 
 The microservice handles two routes including a GET request to the root (or "/") which returns a standard "Hello World!" greeting. This was implemented by the project team in the initial version of the microservice.
 
