@@ -32,12 +32,12 @@ x-amzn-RequestId: eea440aa-3f43-11e7-aa6d-8b93f65c4c72
 
 Chalice will allow deployments to be pushed by developers on the team to different environments (dev, test, demo, production) all with different resources:
 
-*chalice deploy dev
-*chalice deploy qa1
-*chalice deploy qa2
-*chalice deploy demo1
-*chalice deploy demo2
-*chalice deploy prod
+* chalice deploy dev
+* chalice deploy qa1
+* chalice deploy qa2
+* chalice deploy demo1
+* chalice deploy demo2
+* chalice deploy prod
 etc.
 
 Chalice automatically tests the code for errors before it is deployed. Should the source code contain errors, the framework will return an error message to the developer. Debugging can also be enabled by uncommenting the following line in the microservice:
