@@ -16,21 +16,19 @@ The microservice handles two routes including a GET request to the root (or "/")
 
 This new version will also handle a POST request to "/greeting" with a variable of "name" passed into the request. The following example uses the "HTTPie" utility to make a simple POST request to the endpoint:
 
-hi
-there
-http --form POST https://endppointname/dev/greeting name=Test
+http --form POST https://endpoint/dev/greeting name=Test
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 19
 Content-Type: text/plain
-Date: Mon, 22 May 2017 23:11:05 GMT
-Via: 1.1 e2af8a85927835558866752f53562ecd.cloudfront.net (CloudFront)
-X-Amz-Cf-Id: JaYOEtiPSRHeGsM4R-27ihv54paYvMI84nvlkSIeHXCpK7xvrV9AAA==
-X-Amzn-Trace-Id: sampled=0;root=1-59237009-fab3e8242323bf462789db69
+Date: Tue, 23 May 2017 00:42:39 GMT
+Via: 1.1 20f1c35f343f4b271ae8dcacfd7ea0e9.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: xK3UpRkC5YA2-aeUNRLgq2N3GlxGRhfciWKSjH1RYXzTpTGV9nw9fw==
+X-Amzn-Trace-Id: sampled=0;root=1-5923857e-6cccf8b6f700da16fc1ef974
 X-Cache: Miss from cloudfront
-x-amzn-RequestId: eea440aa-3f43-11e7-aa6d-8b93f65c4c72
+x-amzn-RequestId: b8bbfa91-3f50-11e7-8f4e-67dfe1285e13
 
-"Hello Test World!"
+"Hello Kirk World!"
 
 
 Chalice will allow deployments to be pushed by developers on the team to different environments (dev, test, demo, production) all with different resources:
