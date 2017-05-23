@@ -17,16 +17,27 @@ The microservice handles two routes including a GET request to the root (or "/")
 This new version will also handle a POST request to "/greeting" with a variable of "name" passed into the request. The following example uses the "HTTPie" utility to make a simple POST request to the endpoint:
 
 http --form POST https://endpoint/dev/greeting name=Test
+
 HTTP/1.1 200 OK
+
 Connection: keep-alive
+
 Content-Length: 19
+
 Content-Type: text/plain
+
 Date: Tue, 23 May 2017 00:42:39 GMT
+
 Via: 1.1 20f1c35f343f4b271ae8dcacfd7ea0e9.cloudfront.net (CloudFront)
+
 X-Amz-Cf-Id: xK3UpRkC5YA2-aeUNRLgq2N3GlxGRhfciWKSjH1RYXzTpTGV9nw9fw==
+
 X-Amzn-Trace-Id: sampled=0;root=1-5923857e-6cccf8b6f700da16fc1ef974
+
 X-Cache: Miss from cloudfront
+
 x-amzn-RequestId: b8bbfa91-3f50-11e7-8f4e-67dfe1285e13
+
 
 "Hello Kirk World!"
 
