@@ -47,6 +47,9 @@ Chalice will allow deployments to be pushed by developers on the team to differe
 * chalice deploy prod
 etc.
 
+Once checking out the code from this repository and installing chalice, executing "chalice deploy" will deploy the application (app.py) to the AWS API Gateway service. The "dev" stage is used by default. The "chalice deploy" command will return the url to the application.
+
+
 Chalice automatically tests the code for errors before it is deployed. Should the source code contain errors, the framework will return an error message to the developer. Debugging can also be enabled by uncommenting the following line in the microservice:
 
 app.debug = True
