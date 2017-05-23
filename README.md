@@ -13,8 +13,11 @@ Chalice can be installed typically on a Linux system using:
 See the documentation above for additional details.
 
 The microservice handles two routes including a GET request to the root (or "/") which returns a standard "Hello World!" greeting. This was implemented by the project team in the initial version of the microservice.
+
 This new version will also handle a POST request to "/greeting" with a variable of "name" passed into the request. The following example uses the "HTTPie" utility to make a simple POST request to the endpoint:
 
+hi
+there
 http --form POST https://endppointname/dev/greeting name=Test
 HTTP/1.1 200 OK
 Connection: keep-alive
@@ -41,6 +44,7 @@ Chalice will allow deployments to be pushed by developers on the team to differe
 etc.
 
 Chalice automatically tests the code for errors before it is deployed. Should the source code contain errors, the framework will return an error message to the developer. Debugging can also be enabled by uncommenting the following line in the microservice:
+
 app.debug = True
 
 Amazon API Gateway provides resiliency and scalability to the application. Details can be found here:
