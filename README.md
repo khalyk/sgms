@@ -1,4 +1,5 @@
-Greetings Microservice using AWS/python/chalice
+## Greetings Microservice using AWS/python/chalice
+
 This microservice was created using Chalice, a python-based serverless microframework for Amazon Web Services (AWS).
 
 Documentation for Chalice:
@@ -15,16 +16,27 @@ The microservice handles two routes including a GET request to the root (or "/")
 This new version will also handle a POST request to "/greeting" with a variable of "name" passed into the request. The following example uses the "HTTPie" utility to make a simple POST request to the endpoint:
 
 http --form POST https://endppointname/dev/greeting name=Test
+
 HTTP/1.1 200 OK
+
 Connection: keep-alive
+
 Content-Length: 19
+
 Content-Type: text/plain
+
 Date: Mon, 22 May 2017 23:11:05 GMT
+
 Via: 1.1 e2af8a85927835558866752f53562ecd.cloudfront.net (CloudFront)
+
 X-Amz-Cf-Id: JaYOEtiPSRHeGsM4R-27ihv54paYvMI84nvlkSIeHXCpK7xvrV9AAA==
+
 X-Amzn-Trace-Id: sampled=0;root=1-59237009-fab3e8242323bf462789db69
+
 X-Cache: Miss from cloudfront
+
 x-amzn-RequestId: eea440aa-3f43-11e7-aa6d-8b93f65c4c72
+
 
 "Hello Test World!"
 
